@@ -1,51 +1,38 @@
 # ============================================================
-# SCREENS.RPY — All Game Screens for "House of Influence"
-# Main menu, save/load, preferences, phone, map, etc.
+# SCREENS.RPY — All Screens for "House of Influence"
 # ============================================================
 
-
-# ============================================================
-# MAIN MENU
-# ============================================================
-
+# --- MAIN MENU ---
 screen main_menu():
     tag menu
-    style_prefix "main_menu"
 
     add "gui/mainmenu/menu_overlay.png"
 
-    frame:
+    vbox:
         xalign 0.5
         yalign 0.3
-        background None
-        # Title
+        spacing 8
         text "HOUSE OF INFLUENCE" size 52 color "#D4A845" xalign 0.5 bold True
-        # Subtitle/version
-        text "v0.1.0" size 16 color "#8A8A8A" xalign 0.5 ypos 60
+        text "v0.1.0" size 16 color "#8A8A8A" xalign 0.5
 
     vbox:
         xalign 0.5
         yalign 0.65
-        spacing 12
+        spacing 14
+        textbutton _("New Game") action Start() style "mmenu_btn"
+        textbutton _("Continue") action ShowMenu("load") style "mmenu_btn"
+        textbutton _("Gallery") action ShowMenu("gallery") style "mmenu_btn"
+        textbutton _("Settings") action ShowMenu("preferences") style "mmenu_btn"
+        textbutton _("Quit") action Quit(confirm=True) style "mmenu_btn"
 
-        textbutton _("New Game") action Start() style "menu_button"
-        textbutton _("Continue") action ShowMenu("load") style "menu_button"
-        textbutton _("Gallery") action ShowMenu("gallery") style "menu_button"
-        textbutton _("Settings") action ShowMenu("preferences") style "menu_button"
-        textbutton _("Quit") action Quit(confirm=True) style "menu_button"
-
-    # Version info
-    text "v[config.version]" xalign 0.98 yalign 0.98 size 14 color "#4A4A5A"
-
-
-style menu_button:
-    background "gui/mainmenu/menu_btn_normal.png"
-    hover_background "gui/mainmenu/menu_btn_hover.png"
+style mmenu_btn:
     xsize 280
-    ysize 55
+    ysize 50
     xalign 0.5
+    background Solid("#1A1A2E")
+    hover_background Solid("#3A3A5E")
 
-style menu_button_text:
+style mmenu_btn_text:
     color "#E8E6E3"
     hover_color "#D4A845"
     size 22
@@ -53,125 +40,81 @@ style menu_button_text:
     yalign 0.5
 
 
-# ============================================================
-# DIALOGUE / SAY SCREEN
-# ============================================================
-
+# --- SAY / DIALOGUE ---
 screen say(who, what):
     style_prefix "say"
 
-    window:
-        id "window"
-
+    window id "window":
         if who is not None:
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who" style "say_who_text"
+            window id "namebox" style "say_namebox":
+                text who id "who" size gui.name_text_size color "#D4A845" bold True
 
-        text what id "what" style "say_dialogue_text"
+        text what id "what" size gui.text_size color "#E8E6E3"
 
-    # Quick menu (Auto, Skip, Log)
     use quick_menu
 
-
-style window:
+style say_window is default:
     background "gui/dialogue/dialogue_box.png"
     xfill True
     ysize gui.textbox_height
-    yalign gui.textbox_yalign
-    padding (50, 50, 50, 30)
+    yalign 1.0
+    padding (60, 50, 60, 30)
 
-style namebox:
+style say_namebox is default:
     background "gui/dialogue/name_plate.png"
     xsize gui.namebox_width
     ysize gui.namebox_height
     xpos gui.name_xpos
     ypos gui.name_ypos
-    padding (10, 5, 10, 5)
-
-style say_who_text:
-    color "#D4A845"
-    size gui.name_text_size
-    bold True
-    xalign 0.5
-    yalign 0.5
-
-style say_dialogue_text:
-    color "#E8E6E3"
-    size gui.text_size
-    xpos gui.dialogue_xpos
-    ypos gui.dialogue_ypos
-    xsize gui.dialogue_width
-    text_align gui.dialogue_text_xalign
+    padding (15, 5, 15, 5)
 
 
-# ============================================================
-# QUICK MENU (During Dialogue)
-# ============================================================
-
+# --- QUICK MENU ---
 screen quick_menu():
     zorder 100
-
     hbox:
         xalign 0.95
-        yalign 0.96
-        spacing 10
+        yalign 0.955
+        spacing 12
+        textbutton "Auto" action Preference("auto-forward", "toggle") style "qm_btn"
+        textbutton "Skip" action Skip() alternate Skip(fast=True, confirm=True) style "qm_btn"
+        textbutton "Log" action ShowMenu("history") style "qm_btn"
+        textbutton "Save" action ShowMenu("save") style "qm_btn"
 
-        textbutton _("Auto") action Preference("auto-forward", "toggle") style "quick_btn"
-        textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True) style "quick_btn"
-        textbutton _("Log") action ShowMenu("history") style "quick_btn"
-        textbutton _("Save") action ShowMenu("save") style "quick_btn"
-
-style quick_btn:
+style qm_btn is default:
     background None
-    xsize 60
-    ysize 30
 
-style quick_btn_text:
-    color "#8A8A8A"
+style qm_btn_text:
+    color "#6A6A7A"
     hover_color "#D4A845"
-    size gui.quick_button_text_size
-    xalign 0.5
+    size 15
 
 
-# ============================================================
-# CHOICE SCREEN
-# ============================================================
-
+# --- CHOICE ---
 screen choice(items):
-    style_prefix "choice"
-
     vbox:
         xalign 0.5
         yalign 0.4
         spacing 12
-
         for i in items:
-            textbutton i.caption action i.action style "choice_button"
+            textbutton i.caption action i.action style "ch_btn"
 
-
-style choice_button:
+style ch_btn:
+    xsize 700
+    ysize 55
+    xalign 0.5
     background "gui/choices/choice_neutral.png"
     hover_background "gui/choices/choice_neutral_hover.png"
-    insensitive_background "gui/choices/choice_locked.png"
-    xsize gui.choice_button_width
-    ysize gui.choice_button_height
-    xalign 0.5
 
-style choice_button_text:
-    color gui.choice_text_color
+style ch_btn_text:
+    color "#E8E6E3"
     hover_color "#D4A845"
-    insensitive_color "#4A4A5A"
     size 20
     xalign 0.5
     yalign 0.5
 
 
-# ============================================================
-# SAVE / LOAD SCREENS
-# ============================================================
-
+# --- SAVE / LOAD ---
 screen save():
     tag menu
     use file_slots(_("Save"))
@@ -181,342 +124,218 @@ screen load():
     use file_slots(_("Load"))
 
 screen file_slots(title):
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Auto"), quick=_("Quick"))
-
-    frame:
-        xfill True
-        yfill True
-        background "gui/overlays/screen_dim.png"
-
-        frame:
-            xalign 0.5
-            yalign 0.5
-            xsize 1200
-            ysize 700
-            background "gui/overlays/settings_panel.png"
-            padding (40, 40)
-
-            vbox:
-                spacing 20
-
-                # Title
-                hbox:
-                    text title size 28 color "#D4A845" bold True
-                    null width 600
-                    textbutton _("Return") action Return() style "small_button"
-
-                # Page tabs
-                hbox:
-                    spacing 10
-                    for pg in range(1, 6):
-                        textbutton str(pg):
-                            action FilePage(pg)
-                            style "page_tab"
-                            selected_background "gui/saveload/page_tab_active.png"
-
-                # Slots grid
-                grid gui.file_slot_cols gui.file_slot_rows:
-                    xalign 0.5
-                    spacing 20
-
-                    for i in range(gui.file_slot_cols * gui.file_slot_rows):
-                        $ slot = i + 1
-                        button:
-                            action FileAction(slot)
-                            style "save_slot"
-
-                            vbox:
-                                spacing 5
-                                add FileScreenshot(slot) xsize config.thumbnail_width ysize config.thumbnail_height
-                                text FileTime(slot, format=_("{#file_time}%b %d, %H:%M"), empty=_("Empty Slot")) size 14 color "#8A8A8A"
-                                text FileSaveName(slot) size 14 color "#E8E6E3"
-
-style save_slot:
-    background "gui/saveload/slot_empty.png"
-    hover_background "gui/saveload/slot_hover.png"
-    xsize 280
-    ysize 180
-    padding (10, 10)
-
-style page_tab:
-    background "gui/saveload/page_tab.png"
-    xsize 100
-    ysize 36
-
-style page_tab_text:
-    color "#8A8A8A"
-    hover_color "#D4A845"
-    selected_color "#D4A845"
-    size 16
-    xalign 0.5
-    yalign 0.5
-
-
-# ============================================================
-# PREFERENCES / SETTINGS
-# ============================================================
-
-screen preferences():
-    tag menu
-
-    frame:
-        xfill True
-        yfill True
-        background "gui/overlays/screen_dim.png"
-
-        frame:
-            xalign 0.5
-            yalign 0.5
-            xsize 900
-            ysize 700
-            background "gui/overlays/settings_panel.png"
-            padding (40, 40)
-
-            vbox:
-                spacing 20
-
-                hbox:
-                    text _("Settings") size 28 color "#D4A845" bold True
-                    null width 500
-                    textbutton _("Return") action Return() style "small_button"
-
-                # Volume controls
-                vbox:
-                    spacing 15
-                    text _("Audio") size 20 color "#D4A845"
-
-                    hbox:
-                        spacing 20
-                        text _("Music") size 18 color "#E8E6E3" xsize 120
-                        bar value Preference("music volume") xsize 300 ysize 20 style "pref_bar"
-
-                    hbox:
-                        spacing 20
-                        text _("Sound") size 18 color "#E8E6E3" xsize 120
-                        bar value Preference("sound volume") xsize 300 ysize 20 style "pref_bar"
-
-                null height 10
-
-                # Display settings
-                vbox:
-                    spacing 15
-                    text _("Display") size 20 color "#D4A845"
-
-                    hbox:
-                        spacing 20
-                        text _("Fullscreen") size 18 color "#E8E6E3" xsize 120
-                        textbutton _("Window") action Preference("display", "any window") style "pref_toggle"
-                        textbutton _("Full") action Preference("display", "fullscreen") style "pref_toggle"
-
-                null height 10
-
-                # Text settings
-                vbox:
-                    spacing 15
-                    text _("Text") size 20 color "#D4A845"
-
-                    hbox:
-                        spacing 20
-                        text _("Speed") size 18 color "#E8E6E3" xsize 120
-                        bar value Preference("text speed") xsize 300 ysize 20 style "pref_bar"
-
-                    hbox:
-                        spacing 20
-                        text _("Auto") size 18 color "#E8E6E3" xsize 120
-                        bar value Preference("auto-forward time") xsize 300 ysize 20 style "pref_bar"
-
-                null height 10
-
-                # Skip settings
-                vbox:
-                    spacing 15
-                    text _("Skip") size 20 color "#D4A845"
-
-                    hbox:
-                        spacing 20
-                        text _("Unseen") size 18 color "#E8E6E3" xsize 120
-                        textbutton _("Skip") action Preference("skip", "all") style "pref_toggle"
-                        textbutton _("Stop") action Preference("skip", "seen") style "pref_toggle"
-
-
-style pref_bar:
-    left_bar "gui/overlays/slider_track.png"
-    right_bar "gui/overlays/slider_track.png"
-    thumb "gui/overlays/slider_thumb.png"
-    ysize 20
-
-style pref_toggle:
-    background "gui/saveload/page_tab.png"
-    hover_background "gui/saveload/page_tab_active.png"
-    selected_background "gui/saveload/page_tab_active.png"
-    xsize 80
-    ysize 36
-
-style pref_toggle_text:
-    color "#8A8A8A"
-    hover_color "#D4A845"
-    selected_color "#D4A845"
-    size 16
-    xalign 0.5
-    yalign 0.5
-
-
-# ============================================================
-# PHONE SCREEN (Central Hub)
-# ============================================================
-
-screen phone_screen():
-    tag phone
-    zorder 150
-    modal True
-
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
 
     frame:
         xalign 0.5
         yalign 0.5
-        background "gui/phone/phone_frame.png"
-        xsize 400
-        ysize 700
-        padding (30, 70, 30, 60)
+        xsize 1100
+        ysize 650
+        background Solid("#1A1A2E")
+        padding (40, 30)
 
         vbox:
-            spacing 15
+            spacing 20
+            hbox:
+                text title size 26 color "#D4A845" bold True
+                null width 700
+                textbutton "Close" action Return() text_color "#8A8A8A" text_hover_color "#D4A845"
 
-            # Clock/date header
-            frame:
-                background None
-                xalign 0.5
-                vbox:
-                    xalign 0.5
-                    text "[time_text]" size 22 color "#E8E6E3" xalign 0.5
-                    text "Day [day]" size 14 color "#8A8A8A" xalign 0.5
+            hbox:
+                spacing 8
+                for pg in range(1, 6):
+                    textbutton str(pg) action FilePage(pg) style "pg_tab"
 
-            null height 10
-
-            # App grid (3x3)
-            grid 3 3:
+            grid 3 2:
                 xalign 0.5
                 spacing 20
+                for i in range(6):
+                    $ slot = i + 1
+                    button:
+                        action FileAction(slot)
+                        xsize 300
+                        ysize 180
+                        background Solid("#0D0D0F")
+                        hover_background Solid("#2A2A3E")
+                        padding (10, 10)
+                        vbox:
+                            spacing 5
+                            add FileScreenshot(slot) xsize 280 ysize 130
+                            text FileTime(slot, format=_("%b %d %H:%M"), empty=_("Empty")) size 13 color "#8A8A8A"
 
-                # Row 1
-                use phone_app_btn("Stats", "gui/phone/icons/icon_stats.png", Show("stats_screen"))
-                use phone_app_btn("Messages", "gui/phone/icons/icon_messages.png", Show("messages_screen"))
-                use phone_app_btn("Camera", "gui/phone/icons/icon_camera.png", Show("camera_screen"))
+style pg_tab:
+    xsize 60
+    ysize 30
+    background Solid("#0D0D0F")
+    hover_background Solid("#2A2A3E")
 
-                # Row 2
-                use phone_app_btn("Shop", "gui/phone/icons/icon_shop.png", Show("shop_screen"))
-                use phone_app_btn("Diary", "gui/phone/icons/icon_diary.png", Show("diary_screen"))
-                use phone_app_btn("Settings", "gui/phone/icons/icon_settings.png", ShowMenu("preferences"))
-
-                # Row 3
-                use phone_app_btn("Gallery", "gui/phone/icons/icon_gallery.png", ShowMenu("gallery"))
-                use phone_app_btn("Quests", "gui/phone/icons/icon_quests.png", Show("quests_screen"))
-                use phone_app_btn("Spy", "gui/phone/icons/icon_spy.png", Show("spy_tools_screen"))
-
-            null height 20
-
-            # Close button
-            textbutton "Close" action Hide("phone_screen") xalign 0.5 style "small_button"
-
-
-# Phone app button helper
-screen phone_app_btn(label, icon, act):
-    vbox:
-        spacing 4
-        imagebutton:
-            idle icon
-            hover icon
-            action act
-            xalign 0.5
-        text label size 12 color "#8A8A8A" xalign 0.5
+style pg_tab_text:
+    color "#8A8A8A"
+    hover_color "#D4A845"
+    selected_color "#D4A845"
+    size 14
+    xalign 0.5
+    yalign 0.5
 
 
-# ============================================================
-# STATS SCREEN (Phone -> Stats)
-# ============================================================
+# --- PREFERENCES ---
+screen preferences():
+    tag menu
 
-screen stats_screen():
-    tag phone_sub
-    zorder 160
-    modal True
-
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
 
     frame:
         xalign 0.5
         yalign 0.5
         xsize 800
-        ysize 600
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
+        ysize 550
+        background Solid("#1A1A2E")
+        padding (40, 30)
 
         vbox:
-            spacing 15
-
+            spacing 20
             hbox:
-                text "Character Stats" size 24 color "#D4A845" bold True
-                null width 400
-                textbutton "X" action Hide("stats_screen") style "small_button"
+                text "Settings" size 26 color "#D4A845" bold True
+                null width 480
+                textbutton "Close" action Return() text_color "#8A8A8A" text_hover_color "#D4A845"
 
-            # Marina stats
-            if marina_unlocked:
-                use char_stat_block("Marina", marina_affection, marina_corruption, marina_obedience, marina_desire, marina_suspicion, "#6B3FA0")
+            vbox:
+                spacing 12
+                text "Audio" size 18 color "#D4A845"
+                hbox:
+                    spacing 20
+                    text "Music" size 16 color "#E8E6E3" yalign 0.5 xsize 80
+                    bar value Preference("music volume") xsize 300 ysize 16 left_bar Solid("#D4A845") right_bar Solid("#2A2A3E")
+                hbox:
+                    spacing 20
+                    text "SFX" size 16 color "#E8E6E3" yalign 0.5 xsize 80
+                    bar value Preference("sound volume") xsize 300 ysize 16 left_bar Solid("#D4A845") right_bar Solid("#2A2A3E")
 
-            # Kaori stats
-            if kaori_unlocked:
-                use char_stat_block("Kaori", kaori_affection, kaori_corruption, kaori_obedience, kaori_desire, kaori_suspicion, "#C17817")
+            vbox:
+                spacing 12
+                text "Text" size 18 color "#D4A845"
+                hbox:
+                    spacing 20
+                    text "Speed" size 16 color "#E8E6E3" yalign 0.5 xsize 80
+                    bar value Preference("text speed") xsize 300 ysize 16 left_bar Solid("#2ECC71") right_bar Solid("#2A2A3E")
+                hbox:
+                    spacing 20
+                    text "Auto" size 16 color "#E8E6E3" yalign 0.5 xsize 80
+                    bar value Preference("auto-forward time") xsize 300 ysize 16 left_bar Solid("#D4789C") right_bar Solid("#2A2A3E")
 
-            # Yuki stats
-            if yuki_unlocked:
-                use char_stat_block("Yuki", yuki_affection, yuki_corruption, yuki_obedience, yuki_desire, yuki_suspicion, "#D4789C")
+            vbox:
+                spacing 12
+                text "Display" size 18 color "#D4A845"
+                hbox:
+                    spacing 15
+                    textbutton "Windowed" action Preference("display", "any window") style "pg_tab"
+                    textbutton "Fullscreen" action Preference("display", "fullscreen") style "pg_tab"
 
 
-# Character stat block helper
-screen char_stat_block(name, affection, corruption, obedience, desire, suspicion, name_color):
+# --- PHONE ---
+screen phone_screen():
+    zorder 150
+    modal True
+
+    add Solid("#000000CC")
+
     frame:
-        background "gui/buttons/btn_map_room_normal.png"
-        xfill True
-        padding (15, 10)
+        xalign 0.5
+        yalign 0.5
+        xsize 380
+        ysize 620
+        background Solid("#111118")
+        padding (30, 40)
 
         vbox:
-            spacing 4
-            text name size 18 color name_color bold True
+            spacing 12
+            xalign 0.5
 
+            text "[time_text]" size 20 color "#E8E6E3" xalign 0.5
+            text "Day [day]" size 14 color "#8A8A8A" xalign 0.5
+            null height 15
+
+            grid 3 3:
+                xalign 0.5
+                spacing 18
+                use _phone_icon("Stats", "gui/phone/icons/icon_stats.png", Show("stats_screen"))
+                use _phone_icon("Msgs", "gui/phone/icons/icon_messages.png", Show("messages_screen"))
+                use _phone_icon("Cam", "gui/phone/icons/icon_camera.png", Show("camera_screen"))
+                use _phone_icon("Shop", "gui/phone/icons/icon_shop.png", Show("shop_screen"))
+                use _phone_icon("Diary", "gui/phone/icons/icon_diary.png", Show("diary_screen"))
+                use _phone_icon("Set", "gui/phone/icons/icon_settings.png", ShowMenu("preferences"))
+                use _phone_icon("Gallery", "gui/phone/icons/icon_gallery.png", ShowMenu("gallery"))
+                use _phone_icon("Quest", "gui/phone/icons/icon_quests.png", Show("quests_screen"))
+                use _phone_icon("Spy", "gui/phone/icons/icon_spy.png", Show("spy_tools_screen"))
+
+            null height 15
+            textbutton "Close" action Hide("phone_screen") xalign 0.5 text_color "#8A8A8A" text_hover_color "#D4A845"
+
+screen _phone_icon(label, icon, act):
+    vbox:
+        spacing 3
+        xsize 80
+        imagebutton idle icon hover icon action act xalign 0.5
+        text label size 11 color "#8A8A8A" xalign 0.5
+
+
+# --- STATS ---
+screen stats_screen():
+    zorder 160
+    modal True
+
+    add Solid("#000000CC")
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xsize 750
+        ysize 520
+        background Solid("#1A1A2E")
+        padding (30, 25)
+
+        vbox:
+            spacing 12
             hbox:
-                spacing 30
-                vbox:
-                    spacing 3
-                    use stat_bar_row("Affection", affection, "#2ECC71")
-                    use stat_bar_row("Corruption", corruption, "#6B3FA0")
-                    use stat_bar_row("Obedience", obedience, "#3498DB")
-                vbox:
-                    spacing 3
-                    use stat_bar_row("Desire", desire, "#D4789C")
-                    use stat_bar_row("Suspicion", suspicion, "#E74C3C")
+                text "Stats" size 24 color "#D4A845" bold True
+                null width 500
+                textbutton "X" action Hide("stats_screen") text_color "#8A8A8A" text_hover_color "#E74C3C"
 
+            if marina_unlocked:
+                use _stat_card("Marina", marina_affection, marina_corruption, marina_obedience, marina_desire, marina_suspicion, "#6B3FA0")
+            if kaori_unlocked:
+                use _stat_card("Kaori", kaori_affection, kaori_corruption, kaori_obedience, kaori_desire, kaori_suspicion, "#C17817")
+            if yuki_unlocked:
+                use _stat_card("Yuki", yuki_affection, yuki_corruption, yuki_obedience, yuki_desire, yuki_suspicion, "#D4789C")
 
-# Individual stat bar row
-screen stat_bar_row(label, value, color):
+screen _stat_card(name, aff, cor, obe, des, sus, col):
+    frame:
+        xfill True
+        background Solid("#0D0D0F")
+        padding (15, 10)
+        vbox:
+            spacing 5
+            text name size 16 color col bold True
+            grid 2 3:
+                spacing 5
+                xsize 320
+                use _bar("Aff", aff, "#2ECC71")
+                use _bar("Des", des, "#D4789C")
+                use _bar("Cor", cor, "#6B3FA0")
+                use _bar("Sus", sus, "#E74C3C")
+                use _bar("Obe", obe, "#3498DB")
+                null
+
+screen _bar(label, val, col):
     hbox:
-        spacing 8
-        text label size 13 color "#8A8A8A" xsize 80
-        bar:
-            value value
-            range 100
-            xsize 120
-            ysize 12
-            left_bar Solid(color)
-            right_bar Solid("#2A2A3E")
-        text "[value]" size 13 color "#E8E6E3"
+        spacing 6
+        text label size 12 color "#8A8A8A" yalign 0.5 xsize 30
+        bar value val range 100 xsize 100 ysize 10 left_bar Solid(col) right_bar Solid("#2A2A3E")
+        text "[val]" size 12 color "#E8E6E3" yalign 0.5
 
 
-# ============================================================
-# SANDBOX MAP SCREEN
-# ============================================================
-
+# --- SANDBOX MAP ---
 screen sandbox_map():
-    tag map
     zorder 120
     modal True
 
@@ -525,310 +344,233 @@ screen sandbox_map():
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 1400
-        ysize 900
+        xsize 1200
+        ysize 750
         background None
-        padding (50, 50)
+        padding (50, 30)
 
         vbox:
-            spacing 20
-
+            spacing 15
             hbox:
-                text "House Map" size 28 color "#D4A845" bold True
-                null width 900
-                textbutton "X" action Hide("sandbox_map") style "small_button"
+                text "House Map" size 26 color "#D4A845" bold True
+                null width 800
+                textbutton "X" action Hide("sandbox_map") text_color "#8A8A8A" text_hover_color "#E74C3C"
 
-            # Second floor
-            text "SECOND FLOOR" size 16 color "#8A8A8A"
+            text "2F" size 14 color "#8A8A8A"
             hbox:
-                spacing 20
-                use map_room_btn("MC Room", "mc_room", True, False)
-                use map_room_btn("Bathroom", "bathroom", True, False)
-                use map_room_btn("Yuki's Room", "yuki_room", yuki_unlocked, False)
-                use map_room_btn("Kaori's Room", "kaori_room", kaori_room_unlocked, not kaori_room_unlocked)
-                use map_room_btn("Marina's Room", "marina_room", marina_unlocked, False)
+                spacing 15
+                use _room("MC Room", "mc_room", True)
+                use _room("Bath", "bathroom", True)
+                use _room("Yuki", "yuki_room", yuki_unlocked)
+                use _room("Kaori", "kaori_room", kaori_room_unlocked)
+                use _room("Marina", "marina_room", marina_unlocked)
 
-            add "gui/map/floor_separator.png" xalign 0.5
+            add Solid("#D4A84530") xsize 1000 ysize 2 xalign 0.5
 
-            # First floor
-            text "FIRST FLOOR" size 16 color "#8A8A8A"
+            text "1F" size 14 color "#8A8A8A"
             hbox:
-                spacing 20
-                use map_room_btn("Kitchen", "kitchen", True, False)
-                use map_room_btn("Living Room", "living_room", True, False)
-                use map_room_btn("Laundry", "laundry", True, False)
-                use map_room_btn("Study", "study", True, False)
-                use map_room_btn("Entrance", "entrance", True, False)
+                spacing 15
+                use _room("Kitchen", "kitchen", True)
+                use _room("Living", "living_room", True)
+                use _room("Laundry", "laundry", True)
+                use _room("Study", "study", True)
+                use _room("Exit", "entrance", True)
 
-            null height 20
-
-            # Outside (if unlocked)
-            if outside_unlocked:
-                text "OUTSIDE" size 16 color "#8A8A8A"
-                hbox:
-                    spacing 20
-                    use map_room_btn("Mall", "mall", True, False)
-                    use map_room_btn("Park", "park", True, False)
-
-
-# Map room button helper
-screen map_room_btn(label, room_id, accessible, locked):
+screen _room(label, rid, ok):
     vbox:
-        spacing 4
-        if locked:
-            imagebutton:
-                idle "gui/map/room_locked.png"
-                action NullAction()
-                tooltip "Locked"
-        elif accessible:
-            imagebutton:
-                idle "gui/map/room_normal.png"
-                hover "gui/map/room_hover.png"
-                action [Hide("sandbox_map"), Jump("goto_" + room_id)]
+        spacing 3
+        if ok:
+            imagebutton idle "gui/map/room_normal.png" hover "gui/map/room_hover.png" action [Hide("sandbox_map"), Jump("goto_" + rid)]
         else:
-            imagebutton:
-                idle "gui/map/room_normal.png"
-                action NullAction()
-
-        text label size 13 color "#E8E6E3" xalign 0.5
+            imagebutton idle "gui/map/room_locked.png" action NullAction()
+        text label size 12 color "#E8E6E3" xalign 0.5
 
 
-# ============================================================
-# GALLERY SCREEN
-# ============================================================
-
+# --- GALLERY (placeholder) ---
 screen gallery():
     tag menu
-
+    add Solid("#000000CC")
     frame:
-        xfill True
-        yfill True
-        background "gui/overlays/screen_dim.png"
-
-        frame:
-            xalign 0.5
-            yalign 0.5
-            xsize 1400
-            ysize 800
-            background "gui/overlays/settings_panel.png"
-            padding (40, 40)
-
-            vbox:
-                spacing 20
-
-                hbox:
-                    text _("Gallery") size 28 color "#D4A845" bold True
-                    null width 900
-                    textbutton _("Return") action Return() style "small_button"
-
-                # Tabs
-                hbox:
-                    spacing 10
-                    textbutton "Marina" action SetScreenVariable("gallery_tab", "marina") style "page_tab"
-                    textbutton "Kaori" action SetScreenVariable("gallery_tab", "kaori") style "page_tab"
-                    textbutton "Yuki" action SetScreenVariable("gallery_tab", "yuki") style "page_tab"
-                    textbutton "Harem" action SetScreenVariable("gallery_tab", "harem") style "page_tab"
-
-                # Placeholder grid
-                text "CG Gallery - Coming Soon" size 20 color "#8A8A8A" xalign 0.5 yalign 0.5
+        xalign 0.5
+        yalign 0.5
+        xsize 800
+        ysize 500
+        background Solid("#1A1A2E")
+        padding (30, 30)
+        vbox:
+            hbox:
+                text "Gallery" size 24 color "#D4A845" bold True
+                null width 500
+                textbutton "Close" action Return() text_color "#8A8A8A" text_hover_color "#D4A845"
+            null height 30
+            text "Coming soon..." size 18 color "#8A8A8A" xalign 0.5
 
 
-# ============================================================
-# HISTORY / LOG SCREEN
-# ============================================================
-
+# --- HISTORY ---
 screen history():
     tag menu
-
+    add Solid("#000000CC")
     frame:
-        xfill True
-        yfill True
-        background "gui/overlays/screen_dim.png"
-
-        frame:
-            xalign 0.5
-            yalign 0.5
-            xsize 1000
-            ysize 700
-            background "gui/overlays/settings_panel.png"
-            padding (40, 40)
-
-            vbox:
-                spacing 10
-
-                hbox:
-                    text _("History") size 28 color "#D4A845" bold True
-                    null width 600
-                    textbutton _("Return") action Return() style "small_button"
-
-                viewport:
-                    scrollbars "vertical"
-                    mousewheel True
-                    draggable True
-                    ysize 580
-
-                    vbox:
-                        for h in _history_list:
-                            frame:
-                                background None
-                                xfill True
-                                padding (0, 5)
-
-                                vbox:
-                                    if h.who:
-                                        text h.who size 16 color "#D4A845" bold True
-                                    text h.what size 18 color "#E8E6E3"
+        xalign 0.5
+        yalign 0.5
+        xsize 900
+        ysize 600
+        background Solid("#1A1A2E")
+        padding (30, 30)
+        vbox:
+            spacing 10
+            hbox:
+                text "History" size 24 color "#D4A845" bold True
+                null width 550
+                textbutton "Close" action Return() text_color "#8A8A8A" text_hover_color "#D4A845"
+            viewport:
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                ysize 480
+                vbox:
+                    for h in _history_list:
+                        vbox:
+                            spacing 2
+                            if h.who:
+                                text h.who size 14 color "#D4A845"
+                            text h.what size 16 color "#E8E6E3"
+                        null height 8
 
 
-# ============================================================
-# CONFIRM SCREEN
-# ============================================================
-
+# --- CONFIRM ---
 screen confirm(message, yes_action, no_action):
     zorder 300
     modal True
-
-    add "gui/overlays/screen_dim.png"
-
+    add Solid("#000000D0")
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 500
-        ysize 200
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
-
+        xsize 450
+        ysize 180
+        background Solid("#1A1A2E")
+        padding (30, 25)
         vbox:
             spacing 20
-            text message size 20 color "#E8E6E3" xalign 0.5 text_align 0.5
-
+            text message size 18 color "#E8E6E3" xalign 0.5 text_align 0.5
             hbox:
                 xalign 0.5
                 spacing 30
-                textbutton _("Yes") action yes_action style "nav_button"
-                textbutton _("No") action no_action style "nav_button"
+                textbutton "Yes" action yes_action style "hud_nav_btn"
+                textbutton "No" action no_action style "hud_nav_btn"
 
 
-# ============================================================
-# PLACEHOLDER SCREENS (Phone sub-screens)
-# ============================================================
-
+# --- PLACEHOLDER PHONE SCREENS ---
 screen messages_screen():
-    tag phone_sub
     zorder 160
     modal True
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 600
-        ysize 500
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
+        xsize 550
+        ysize 400
+        background Solid("#1A1A2E")
+        padding (25, 20)
         vbox:
             hbox:
-                text "Messages" size 24 color "#D4A845" bold True
-                null width 350
-                textbutton "X" action Hide("messages_screen") style "small_button"
+                text "Messages" size 22 color "#D4A845" bold True
+                null width 280
+                textbutton "X" action Hide("messages_screen") text_color "#8A8A8A" text_hover_color "#E74C3C"
             null height 20
-            text "No messages yet." size 18 color "#8A8A8A" xalign 0.5
+            text "No messages." size 16 color "#8A8A8A" xalign 0.5
 
 screen camera_screen():
-    tag phone_sub
     zorder 160
     modal True
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 600
-        ysize 500
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
+        xsize 550
+        ysize 400
+        background Solid("#1A1A2E")
+        padding (25, 20)
         vbox:
             hbox:
-                text "Camera Footage" size 24 color "#D4A845" bold True
-                null width 280
-                textbutton "X" action Hide("camera_screen") style "small_button"
+                text "Camera" size 22 color "#D4A845" bold True
+                null width 310
+                textbutton "X" action Hide("camera_screen") text_color "#8A8A8A" text_hover_color "#E74C3C"
             null height 20
-            text "No cameras installed." size 18 color "#8A8A8A" xalign 0.5
+            text "No cameras installed." size 16 color "#8A8A8A" xalign 0.5
 
 screen shop_screen():
-    tag phone_sub
     zorder 160
     modal True
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 700
-        ysize 600
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
+        xsize 550
+        ysize 400
+        background Solid("#1A1A2E")
+        padding (25, 20)
         vbox:
             hbox:
-                text "Shop" size 24 color "#D4A845" bold True
-                null width 470
-                textbutton "X" action Hide("shop_screen") style "small_button"
+                text "Shop" size 22 color "#D4A845" bold True
+                null width 330
+                textbutton "X" action Hide("shop_screen") text_color "#8A8A8A" text_hover_color "#E74C3C"
             null height 20
-            text "Shop coming in next update." size 18 color "#8A8A8A" xalign 0.5
+            text "Coming soon." size 16 color "#8A8A8A" xalign 0.5
 
 screen diary_screen():
-    tag phone_sub
     zorder 160
     modal True
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 600
-        ysize 500
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
+        xsize 550
+        ysize 400
+        background Solid("#1A1A2E")
+        padding (25, 20)
         vbox:
             hbox:
-                text "Diary" size 24 color "#D4A845" bold True
-                null width 380
-                textbutton "X" action Hide("diary_screen") style "small_button"
+                text "Diary" size 22 color "#D4A845" bold True
+                null width 320
+                textbutton "X" action Hide("diary_screen") text_color "#8A8A8A" text_hover_color "#E74C3C"
             null height 20
-            text "No notes yet." size 18 color "#8A8A8A" xalign 0.5
+            text "No notes." size 16 color "#8A8A8A" xalign 0.5
 
 screen quests_screen():
-    tag phone_sub
     zorder 160
     modal True
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 600
-        ysize 500
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
+        xsize 550
+        ysize 400
+        background Solid("#1A1A2E")
+        padding (25, 20)
         vbox:
             hbox:
-                text "Quests" size 24 color "#D4A845" bold True
-                null width 370
-                textbutton "X" action Hide("quests_screen") style "small_button"
+                text "Quests" size 22 color "#D4A845" bold True
+                null width 310
+                textbutton "X" action Hide("quests_screen") text_color "#8A8A8A" text_hover_color "#E74C3C"
             null height 20
-            text "No active quests." size 18 color "#8A8A8A" xalign 0.5
+            text "No quests." size 16 color "#8A8A8A" xalign 0.5
 
 screen spy_tools_screen():
-    tag phone_sub
     zorder 160
     modal True
-    add "gui/overlays/screen_dim.png"
+    add Solid("#000000CC")
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 600
-        ysize 500
-        background "gui/overlays/settings_panel.png"
-        padding (30, 30)
+        xsize 550
+        ysize 400
+        background Solid("#1A1A2E")
+        padding (25, 20)
         vbox:
             hbox:
-                text "Spy Tools" size 24 color "#D4A845" bold True
-                null width 340
-                textbutton "X" action Hide("spy_tools_screen") style "small_button"
+                text "Spy Tools" size 22 color "#D4A845" bold True
+                null width 270
+                textbutton "X" action Hide("spy_tools_screen") text_color "#8A8A8A" text_hover_color "#E74C3C"
             null height 20
-            text "No tools purchased." size 18 color "#8A8A8A" xalign 0.5
+            text "No tools." size 16 color "#8A8A8A" xalign 0.5
