@@ -748,3 +748,267 @@ No grinding. No arbitrary counters. Just play the game → MC naturally gets bet
 
 *Fixes Applied: v3.1*  
 *Status: Ready for Development*
+
+---
+
+## APPENDIX: v3.2 — NTR EXPANSION
+
+### NTR Philosophy:
+This game supports ALL 3 types of NTR simultaneously (toggleable):
+- **Netorare** — Heroines get taken FROM MC (player watches/discovers helplessly)
+- **Netori** — MC IS the thief (base game is already this — stealing step-family from normalcy)
+- **Netorase** — MC deliberately SHARES heroines as domination tool
+
+---
+
+### NTR PHONE DISCOVERY SYSTEM
+
+The Phone Clone item ($200) already exists in the game. When NTR is enabled, it becomes the PRIMARY discovery tool:
+
+**How it works:**
+- MC clones a heroine's phone → gains access to her messages, photos, call log
+- When NTR is active: new conversations appear from rival characters
+- Player can CHECK PHONE once per time slot (free action)
+- Chat logs update daily — escalation happens whether MC checks or not
+- If MC doesn't check for 3+ days: stages advance faster (punishment for negligence)
+
+**What player sees in phone:**
+- Text conversations (escalating from innocent → flirty → explicit)
+- Received photos from rival (dick pics, suggestive selfies)
+- HER sent photos (if she reciprocates — increasingly lewd)
+- Location sharing / meetup plans
+- Deleted messages (recovered with higher Phone Clone level)
+- Browser history (searches like "is it cheating if..." or "why do I like older men")
+
+---
+
+### NTR RIVALS (Detailed)
+
+#### Marina's Rival: TAKESHI (Delivery Man)
+| Attribute | Detail |
+|-----------|--------|
+| **Age** | 28 |
+| **Look** | Fit, tanned, friendly smile. Working-class charm. |
+| **Personality** | Flirty, confident, persistent but not aggressive |
+| **Why Marina is vulnerable** | She's touch-starved, lonely, he's the only man who visits regularly and compliments her |
+| **His approach** | Starts: carrying heavy boxes inside → staying for tea → "you look stressed, need a massage?" → physical escalation |
+
+**NTR Escalation (Marina):**
+```
+Stage 1: Takeshi starts staying longer during deliveries. Small talk.
+Stage 2: He gets her number. "In case you need help with something heavy."
+         [Phone: innocent texts — "hope you had a good day!"]
+Stage 3: Texts become flirty. "You're too beautiful to be alone."
+         [Phone: she responds with "stop it lol" but doesn't block]
+Stage 4: He touches her hand/shoulder during delivery. She doesn't pull away.
+         [Camera: catch this moment if installed in kitchen]
+Stage 5: He visits when MC is "away." Massage → groping → she freezes but moans.
+         [Camera: full groping footage available]
+Stage 6: First sex. She's crying but doesn't stop him. "I'm so lonely..."
+         [Phone: "I can't believe we did that" / "when can I see you again"]
+Stage 7: Regular afternoon visits. She dresses up for him. Cooks him food.
+         [Phone: explicit photos exchanged, planning around MC's schedule]
+Stage 8: She starts comparing MC unfavorably. Less attention to MC. Prefers Takeshi.
+         [Phone: "I think I'm falling for him..." texts to old friend]
+Stage 9: She asks MC to move out. Takeshi "moves in." PERMANENT LOSS.
+```
+
+#### Kaori's Rival: DIRECTOR HONDA (Her Boss)
+| Attribute | Detail |
+|-----------|--------|
+| **Age** | 47 |
+| **Look** | Overweight, balding, sweaty. Ugly but powerful. |
+| **Personality** | Sleazy, manipulative, uses career leverage |
+| **Why Kaori is vulnerable** | Needs the job desperately, can't afford to quit, he holds all the power |
+| **His approach** | Starts: inappropriate comments → "accidental" touching → quid pro quo ("promotion if you're nice to me") → full coercion |
+
+**NTR Escalation (Kaori):**
+```
+Stage 1: Boss makes her stay late. "Special project." Comments on her body.
+Stage 2: He texts her outside work hours. "Wear the red blouse tomorrow."
+         [Phone: uncomfortable compliance texts to friend — "my boss is being weird"]
+Stage 3: Touches her thigh under table during meeting. She freezes.
+         [Phone: deleted message — "I hate this job but I need the money"]
+Stage 4: "Work trip" — hotel room, one bed. He corners her.
+         [Phone: frantic texts — "I don't know what to do" / no response from friend]
+Stage 5: Forces oral in his office. She complies to keep job. Crying after.
+         [Phone: she deletes all evidence — but Phone Clone keeps deleted messages]
+Stage 6: Regular "overtime." She stops resisting. Dissociates during.
+         [Camera at office: if MC follows her / plants device in her bag]
+Stage 7: He buys her expensive things. She rationalizes: "it's just a job benefit."
+         [Phone: new lingerie photos SHE sent to him, shopping receipts]
+Stage 8: She starts defending her boss. Gets angry if MC criticizes her job.
+         [Phone: "he's not that bad... he takes care of me at least"]
+Stage 9: She quits family, moves into apartment boss pays for. PERMANENT LOSS.
+```
+
+#### Yuki's Rival: REN (College Senpai)
+| Attribute | Detail |
+|-----------|--------|
+| **Age** | 21 |
+| **Look** | Handsome, tall, athletic. Campus popular guy. |
+| **Personality** | Charming, smooth talker, experienced with women |
+| **Why Yuki is vulnerable** | He's everything MC "isn't" (popular, confident, successful). She admires confidence. |
+| **His approach** | Starts: study group → walking her home → "you're different from other girls" → physical escalation |
+
+**NTR Escalation (Yuki):**
+```
+Stage 1: Yuki mentions "senpai helped me with notes today" casually.
+Stage 2: They exchange LINE/social media. He likes all her posts.
+         [Phone: innocent convos — "thanks for today senpai!" / "anytime, cutie"]
+Stage 3: Late study sessions. "Let me walk you home." She comes home later.
+         [Phone: "you don't have to walk me... but okay :)"]
+Stage 4: He confesses. She says "I have someone I like" but doesn't reject clearly.
+         [Phone: "I don't know what to do... he's really nice but..." — texts to classmate]
+Stage 5: He kisses her. She doesn't pull back. "It just happened..."
+         [Phone: deleted selfie of them together, his hand on her waist]
+Stage 6: First sex. She convinces herself: "Onii-chan doesn't see me as a woman anyway..."
+         [Phone: explicit texts, "come to my apartment again Saturday"]
+Stage 7: She's happier, dresses cuter for college, less clingy with MC at home.
+         [Phone: love hotel receipt, matching couple item purchased]
+Stage 8: Starts openly comparing: "Ren-senpai would never..." or distant behavior.
+         [Phone: "I think I love him" / photos of them in bed]
+Stage 9: Announces boyfriend to family. "We're official." Moves to his place. PERMANENT LOSS.
+```
+
+---
+
+### NTR INTERVENTION SYSTEM
+
+At each stage, MC has intervention options:
+
+| Stage | Easy Intervention | Hard Intervention | Dark Intervention |
+|-------|------------------|-------------------|-------------------|
+| 1-2 | Talk to her (Affection check) | — | — |
+| 3-4 | Confront rival directly | Show her evidence of rival's bad intentions | Use Influence to make her distrust rival |
+| 5-6 | Blackmail rival (need evidence) | Blackmail HER with NTR evidence | Force "reclaim" sex — mark territory |
+| 7-8 | Extreme measures (threaten/beat rival) | Full blackmail + isolation from rival | Mind-break her back to submission |
+| 9 | **TOO LATE** — permanent loss | — | — |
+
+**Warning System:**
+- At Stage 3: subtle hint in dialogue ("she seems distracted lately")
+- At Stage 5: more obvious ("she came home late again... smelled different")
+- At Stage 7: explicit warning ("⚠️ You are about to lose [CHARACTER] permanently. Act now.")
+- At Stage 8: final warning ("⚠️ LAST CHANCE to save [CHARACTER].")
+
+---
+
+### NTR RECLAIM SCENES (Post-Discovery Payoff)
+
+After MC discovers cheating and intervenes, special "Reclaim" content unlocks:
+
+**Types of Reclaim Scenes:**
+
+| Type | Trigger | Description |
+|------|---------|-------------|
+| **Rage Reclaim** | MC catches them in act, physically removes rival | Aggressive, angry sex immediately after. "You're MINE. Say it." Rough, possessive, marking. |
+| **Punishment Reclaim** | MC confronts her with evidence | Forces her to confess every detail while he fucks her. Each confession = harder/more degrading. |
+| **Submission Reclaim** | MC uses blackmail (NTR evidence) | She must do increasingly degrading acts to "earn" MC's forgiveness. Multi-scene punishment arc. |
+| **Comparison Reclaim** | After stopping affair | MC forces her to compare: "Was he better? Show me what he did to you." Then MC does it better/harder. |
+| **Branding Reclaim** | Obedience 80+ post-reclaim | Collar, marking, permanent ownership display. "You never look at another man again." |
+
+**Stat effects of Reclaim:**
+- Corruption +20 (she's been broken further by the guilt + reclaim)
+- Obedience +30 (she "owes" MC, feels guilt)
+- Desire +25 (the aggressive reclaim sex awakens something)
+- Affection: depends on method (rage = -10, gentle reclaim = +10)
+
+---
+
+### NETORASE (MC SHARING) SUB-SYSTEM
+
+When MC reaches Obedience 90+ on a character AND NTR Offensive is enabled:
+
+**How Sharing Works:**
+1. MC ORDERS heroine to engage with another man
+2. MC WATCHES (via camera, hidden, or openly)
+3. Heroine's reaction depends on Corruption level:
+   - Low Corruption: crying, begging not to, does it reluctantly → Corruption SPIKES
+   - Mid Corruption: confused, humiliated, but body responds → Addiction rises
+   - High Corruption: performs enthusiastically for MC's approval → "Am I a good girl?"
+   - Broken: does it mechanically, no emotion, waits for MC's praise → Full doll
+
+**Sharing Scenarios:**
+
+| Heroine | Shared With | Scenario |
+|---------|-------------|----------|
+| Marina | Takeshi (delivery man) | MC arranges delivery at specific time. Orders Marina to "be nice." Watches from hidden room. |
+| Marina | Random stranger | MC hires a "massage therapist." Marina must comply. MC watches through camera. |
+| Kaori | Her boss | MC SENDS Kaori to boss. "Accept his offer. I'll be watching." Uses it to advance her career (MC profits). |
+| Kaori | MC's friend | MC invites friend over. Orders Kaori to "entertain" him. Power display. |
+| Yuki | College senpai | MC tells Yuki to "go on a date with him" and report back with photos/videos as proof. |
+| Yuki | Multiple | Orders Yuki to attend a mixer and "collect" men. MC watches via phone stream. |
+
+**Player benefit of Netorase:**
+- Extra H-scenes (different positions/partners = variety)
+- Corruption skyrockets on shared heroine
+- MC demonstrates ULTIMATE control (she does it because HE said so)
+- Leads to "broken" state faster
+- Some players find the voyeur + control combo extremely hot
+
+---
+
+### NETORI FRAMING (Base Game)
+
+The base game is ALREADY Netori by nature — MC is stealing women from their "normal lives":
+- Marina: was a faithful wife/widow → MC takes her
+- Kaori: could have a normal career/relationship → MC corrupts her
+- Yuki: could have a normal college life/boyfriend → MC claims her
+
+**Enhanced Netori elements to add:**
+- Give each heroine a "pre-existing connection" that MC destroys:
+  - Marina: Still talks to husband's grave weekly. MC makes her stop caring.
+  - Kaori: Has one work friend who likes her. MC isolates Kaori from her.
+  - Yuki: Had a childhood friend (boy) who's clearly in love with her. MC takes her right under his nose.
+- NTR fans who enjoy Netori get satisfaction from MC "winning" against these connections
+- Scenes where the "rival" DISCOVERS (catches MC with their person) = satisfying power moment
+
+---
+
+### REVISED NTR SETTINGS MENU
+
+```
+NTR CONTENT CONFIGURATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[x] Netori (MC steals heroines from normal life — built into base game)
+
+[ ] Netorare — Heroines get taken by rivals
+    [ ] Marina: Delivery man route
+    [ ] Kaori: Boss coercion route
+    [ ] Yuki: College senpai route
+    [x] Show phone discovery content
+    [x] Show NTR CG scenes (voyeur perspective)
+    [ ] Allow permanent loss (disable = always recoverable)
+
+[ ] Netorase — MC shares heroines deliberately
+    [ ] Marina sharing scenarios
+    [ ] Kaori sharing scenarios
+    [ ] Yuki sharing scenarios
+    [x] MC watches (voyeur/camera)
+    [ ] MC participates (threesome)
+
+GENERAL NTR SETTINGS:
+[x] Show warning before point-of-no-return
+[x] Phone clone shows NTR chat progression
+[ ] Auto-save before Stage 7 (safety net)
+```
+
+---
+
+### NTR CONTENT VOLUME ESTIMATE
+
+| Type | Scenes Per Character | Total |
+|------|---------------------|-------|
+| NTR Discovery (phone/camera) | 8-10 text events | ~30 |
+| NTR H-Scenes (rival with heroine) | 3-5 per character | ~12 |
+| Reclaim Scenes | 3-4 per character | ~10 |
+| Netorase Scenes | 2-3 per character | ~8 |
+| Total NTR Content | | **~60 unique events/scenes** |
+
+This makes NTR a SUBSTANTIAL portion of the game, not just a checkbox feature.
+
+---
+
+*NTR Expansion Added: v3.2*  
+*Status: Concept Complete — Ready for Development*
