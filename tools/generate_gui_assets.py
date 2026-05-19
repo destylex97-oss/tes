@@ -679,3 +679,122 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def generate_phone_icons():
+    """Generate phone app icons with simple symbolic graphics."""
+    path = os.path.join(OUTPUT_DIR, "phone", "icons")
+    ensure_dir(path)
+
+    icon_size = 48
+
+    def make_icon(name, draw_func):
+        img = Image.new("RGBA", (icon_size, icon_size), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(img)
+        draw_func(draw, icon_size)
+        img.save(os.path.join(path, f"icon_{name}.png"))
+
+    # Stats icon (bar chart)
+    def draw_stats(draw, s):
+        bar_w = 8
+        draw.rectangle((8, 28, 8+bar_w, s-6), fill=hex_to_rgba(COLORS["success"]))
+        draw.rectangle((20, 18, 20+bar_w, s-6), fill=hex_to_rgba(COLORS["primary"]))
+        draw.rectangle((32, 10, 32+bar_w, s-6), fill=hex_to_rgba(COLORS["yuki"]))
+
+    # Messages icon (chat bubble)
+    def draw_messages(draw, s):
+        draw_rounded_rect(draw, (6, 6, s-6, s-14), 8, fill=hex_to_rgba(COLORS["primary"]))
+        draw.polygon([(14, s-14), (14, s-6), (22, s-14)], fill=hex_to_rgba(COLORS["primary"]))
+        # dots
+        for x in [16, 24, 32]:
+            draw.ellipse((x, 18, x+4, 22), fill=hex_to_rgba(COLORS["bg"]))
+
+    # Camera icon
+    def draw_camera(draw, s):
+        draw_rounded_rect(draw, (6, 14, s-6, s-8), 6, fill=hex_to_rgba(COLORS["text_secondary"]))
+        draw.rectangle((16, 8, 32, 14), fill=hex_to_rgba(COLORS["text_secondary"]))
+        draw.ellipse((16, 18, 32, 34), outline=hex_to_rgba(COLORS["text"]), width=2)
+        draw.ellipse((20, 22, 28, 30), fill=hex_to_rgba(COLORS["primary"]))
+
+    # Shop icon (cart)
+    def draw_shop(draw, s):
+        draw.line([(8, 12), (14, 12), (18, 32), (38, 32)], fill=hex_to_rgba(COLORS["primary"]), width=3)
+        draw.line([(14, 12), (40, 12), (36, 28), (18, 28)], fill=hex_to_rgba(COLORS["primary"]), width=2)
+        draw.ellipse((18, 34, 24, 40), fill=hex_to_rgba(COLORS["primary"]))
+        draw.ellipse((32, 34, 38, 40), fill=hex_to_rgba(COLORS["primary"]))
+
+    # Diary icon (notebook)
+    def draw_diary(draw, s):
+        draw_rounded_rect(draw, (10, 6, s-8, s-6), 4, fill=hex_to_rgba(COLORS["surface"]),
+                          outline=hex_to_rgba(COLORS["primary"]), width=2)
+        draw.line([(16, 6), (16, s-6)], fill=hex_to_rgba(COLORS["primary"]), width=2)
+        for y in [16, 22, 28, 34]:
+            draw.line([(20, y), (36, y)], fill=hex_to_rgba(COLORS["text_secondary"]), width=1)
+
+    # Settings icon (gear)
+    def draw_settings(draw, s):
+        cx, cy, r = s//2, s//2, 14
+        draw.ellipse((cx-r, cy-r, cx+r, cy+r), outline=hex_to_rgba(COLORS["text_secondary"]), width=3)
+        draw.ellipse((cx-6, cy-6, cx+6, cy+6), fill=hex_to_rgba(COLORS["text_secondary"]))
+        # gear teeth (simplified as lines)
+        import math
+        for angle in range(0, 360, 45):
+            rad = math.radians(angle)
+            x1 = cx + int((r-2) * math.cos(rad))
+            y1 = cy + int((r-2) * math.sin(rad))
+            x2 = cx + int((r+4) * math.cos(rad))
+            y2 = cy + int((r+4) * math.sin(rad))
+            draw.line([(x1, y1), (x2, y2)], fill=hex_to_rgba(COLORS["text_secondary"]), width=3)
+
+    # Gallery icon (image frame)
+    def draw_gallery(draw, s):
+        draw_rounded_rect(draw, (6, 10, s-6, s-10), 4, outline=hex_to_rgba(COLORS["primary"]), width=2)
+        # mountain silhouette
+        draw.polygon([(10, 34), (20, 20), (28, 28), (38, 16), (42, 34)],
+                     fill=hex_to_rgba(COLORS["primary"], 120))
+        # sun
+        draw.ellipse((12, 14, 20, 22), fill=hex_to_rgba(COLORS["primary"]))
+
+    # Quest icon (clipboard/checklist)
+    def draw_quests(draw, s):
+        draw_rounded_rect(draw, (10, 6, s-10, s-6), 4, fill=hex_to_rgba(COLORS["surface"]),
+                          outline=hex_to_rgba(COLORS["text_secondary"]), width=2)
+        # clip
+        draw.rectangle((18, 4, 30, 10), fill=hex_to_rgba(COLORS["text_secondary"]))
+        # checkmarks
+        for y in [16, 24, 32]:
+            draw.line([(14, y+2), (17, y+5), (22, y)], fill=hex_to_rgba(COLORS["success"]), width=2)
+            draw.line([(25, y+2), (34, y+2)], fill=hex_to_rgba(COLORS["text_secondary"]), width=2)
+
+    # Spy icon (magnifying glass)
+    def draw_spy(draw, s):
+        draw.ellipse((8, 8, 30, 30), outline=hex_to_rgba(COLORS["danger"]), width=3)
+        draw.line([(28, 28), (40, 40)], fill=hex_to_rgba(COLORS["danger"]), width=3)
+        draw.ellipse((14, 14, 24, 24), fill=hex_to_rgba(COLORS["danger"], 60))
+
+    # Generate all icons
+    icons = {
+        "stats": draw_stats,
+        "messages": draw_messages,
+        "camera": draw_camera,
+        "shop": draw_shop,
+        "diary": draw_diary,
+        "settings": draw_settings,
+        "gallery": draw_gallery,
+        "quests": draw_quests,
+        "spy": draw_spy,
+    }
+
+    for name, func in icons.items():
+        make_icon(name, func)
+
+    print("  [OK] Phone app icons (9 icons)")
+
+
+# Update main to include icons
+if __name__ == "__main__":
+    generate_phone_icons()
+    # Count new files
+    icon_path = os.path.join(OUTPUT_DIR, "phone", "icons")
+    count = len([f for f in os.listdir(icon_path) if f.endswith(".png")])
+    print(f"  Generated {count} phone icons in {icon_path}")
