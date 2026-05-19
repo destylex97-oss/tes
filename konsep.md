@@ -1012,3 +1012,188 @@ This makes NTR a SUBSTANTIAL portion of the game, not just a checkbox feature.
 
 *NTR Expansion Added: v3.2*  
 *Status: Concept Complete — Ready for Development*
+
+---
+
+## APPENDIX: v3.3 — H-SCENE DEPTH EXPANSION
+
+### SIGNATURE SCENES (Iconic Per-Character)
+
+Each heroine has 2-3 unique "signature" scenes that ONLY she can do — scenes so specific they become the game's identity.
+
+#### Marina's Signatures:
+| Scene | Situation | What Makes It Iconic |
+|-------|-----------|---------------------|
+| **Naked Apron Morning** | MC orders dress code → Marina cooks breakfast in apron only. MC gropes from behind → bends her over counter → sex while she tries to keep cooking. | Domestic + lewd contrast. She's moaning but still tries to flip the eggs. |
+| **Bathtub Overflow** | MC "accidentally" enters bathroom. She's soaking in tub. Water displacement when MC gets in → overflow everywhere → slippery wet sex. | Water physics, steam, wet skin CGs. Sensory overload. |
+| **Paizuri Queen** | Dedicated titfuck scene. Her F-cups wrapped around MC. Eye contact from below. Multiple variants: dry, oiled, with mouth combo. | Marina's body type was BUILT for this. Multiple CG angles. |
+| **Lap Pillow Escalation** | Starts innocent (she offers lap pillow while MC rests). MC's face inches from her chest. Escalates to her "comforting" him with her body. | Maternal → sexual transition. The corruption of care. |
+
+#### Kaori's Signatures:
+| Scene | Situation | What Makes It Iconic |
+|-------|-----------|---------------------|
+| **Office Stockings BJ** | MC visits Kaori's office. Under-desk blowjob while she's on a conference call. Must stay silent. Stockings visible, heels still on. | Professional degradation. Risk of being caught by coworkers. |
+| **Hate-Fuck Wall Pin** | After explosive argument → MC slams her against wall → skirt hiked, panties pulled aside (not removed) → aggressive standing sex. She's cursing him while moaning. | Raw energy. Clothes still mostly on. |
+| **Drunk Lap Confession** | Kaori wasted on wine, sits on MC's lap. Slurring honest feelings. Grinding without realizing → "just... put it in already, idiot" → crying while they fuck. | Vulnerability + tsundere breaking point. Emotional AND physical. |
+| **Stockings Thigh-Job** | MC doesn't penetrate — uses her thighs in black stockings. She's "allowing" this because "it doesn't count as sex." Cums between her thighs. She's outraged but aroused. | Denial/technicality kink. "This doesn't count!" while dripping. |
+
+#### Yuki's Signatures:
+| Scene | Situation | What Makes It Iconic |
+|-------|-----------|---------------------|
+| **Under-Table Family Dinner** | Full family at dining table. Yuki under tablecloth giving MC oral. MC must keep straight face while Marina and Kaori talk. | Ultimate public risk. Comedy + tension + lewd. |
+| **"Study Session" Grind** | Yuki on MC's lap, textbook open. Pretending to study. Grinding. "Onii-chan I can't focus~" → transitions to desk sex, books falling everywhere. | Innocent→lewd transition. Her specialty. |
+| **Ahegao Selfie** | During sex, Yuki grabs phone, takes selfie with tongue out, cum on face. Sends to MC later: "so you don't forget about me today~ ♡" | Modern, social-media-era hentai. Player receives the "photo" in phone UI. |
+| **Midnight Reverse Rape** | Yuki sneaks into MC's bed, starts riding him while he's "asleep." MC wakes up mid-act. She doesn't stop: "Just pretend you're sleeping, nii~" | Role reversal — SHE'S the predator. Plays into her yandere nature. |
+
+---
+
+### FETISH CATALOG (Full List)
+
+| Fetish | Heroine(s) | Unlock Condition | Notes |
+|--------|-----------|-----------------|-------|
+| **Paizuri (Titfuck)** | Marina, Yuki | Corruption 40+ | Marina = best (F-cup), Yuki = tight fit (D-cup). Variants: dry, oiled, with licking. |
+| **Footjob** | Kaori | Training: Acts + bought heels/stockings | She hates it but MC loves her feet in stockings. Humiliation angle. |
+| **Thigh-job (Sumata)** | Marina, Kaori | Corruption 30+ | Marina: bare thick thighs. Kaori: through stockings ("doesn't count as sex!") |
+| **Hotdogging (Ass-job)** | All | Corruption 50+ | MC between her ass cheeks without penetration. Teasing/denial variant. |
+| **Clothed Sex** | Kaori (OL uniform) | Any H-scene choice | Panties aside, skirt up, blouse open. Quick & dirty energy. |
+| **Naked Apron** | Marina | Training: Dress Code | Iconic MILF fantasy. Cooking + sex. |
+| **Maid Outfit** | Any | Buy maid set ($200) + Dress Code training | "Welcome home, Master." Full maid service RP. |
+| **Bunny Girl** | Yuki, Kaori | Buy bunny set ($250) + Dress Code | Yuki: eager. Kaori: humiliated. |
+| **School Uniform** | Yuki | Affection 50+ or Corruption 40+ | She still has her old one. "Does onii-chan like this~?" |
+| **Lingerie Only** | All | Buy lingerie ($100-300) | Gift item. She wears it "for you." |
+| **Virgin Scene** | Kaori, Yuki | First sex with them (one-time) | Blood, pain, emotional reaction. Unique CG. Non-repeatable. |
+| **Creampie** | All | Corruption 60+ | She "allows" it / too lost in pleasure to say stop. |
+| **Facial** | All | Corruption 50+ or Obedience 50+ | Multiple variants: eyes open/closed, surprised/willing. |
+| **Swallow** | All | Obedience 60+ | Shows it in mouth before swallowing (trained behavior). |
+| **Body Shot** | All | Default available | Chest, stomach, back, ass. Player picks. |
+| **Pregnancy Scare** | All | After 3+ creampie scenes | Event triggers: late period panic. Can become recurring theme. |
+| **Anal (First Time)** | Marina (painful, submissive), Kaori (reluctant, angry), Yuki (curious, eager) | Corruption 70+ | Each reacts differently. Special first-time CG per character. |
+| **Anal (Trained)** | All | After first anal + repeat 3x | She's used to it now. Less resistance, more pleasure response. |
+| **Double Penetration** | Harem or Netorase | Harem route OR NTR sharing active | Toys + MC, or MC + rival (netorase). |
+| **Masturbation (Voyeur)** | All | Hidden camera or peephole | Watch her get off alone. Different style per character. |
+| **Mutual Masturbation** | All | Affection 50+ | "Show me how you do it. I'll show you mine." |
+| **69 Position** | All | Corruption 50+ | Variants: MC on top (face-fuck), her on top (smothering). |
+| **Bondage (Light)** | Kaori (rope/tie), Marina (blindfold/cuffs) | Buy restraints + Obedience 60+ | Kaori: struggles. Marina: surrenders immediately. |
+| **Blindfold** | Marina, Kaori | Buy blindfold + Obedience 40+ | Sensory deprivation. She can't see what's coming next. |
+| **Collar + Leash** | All (broken state) | Resistance 0 OR Obedience 90+ | Ownership symbol. Permanent wear option (Dress Code). |
+| **Ahegao / Mind-break Face** | All | Resistance 0 scenes | Tongue out, eyes rolled back, drooling. Ultimate corruption visual. |
+| **Standing Carry** | Yuki (light enough), Kaori (against wall support) | Corruption 60+ | MC holds her up, she wraps legs around. Strength/dominance display. |
+| **Mating Press** | All | Corruption 70+ | Legs pinned back, deep penetration, dominant position. Breeding energy. |
+| **Prone Bone** | All | Available from first sex | Face-down, ass-up. Simple but effective. Good for "sleep" scenes too. |
+| **Cowgirl (Active)** | Yuki (eager rider), Marina (shy on top) | Varies | Yuki: energetic, takes control. Marina: embarrassed, hides face with hands. |
+| **Reverse Cowgirl** | Kaori (won't face MC), All | Corruption 50+ | Kaori: "I don't want to see your face" (tsundere classic). |
+| **Spooning (Intimate)** | Marina, Yuki | Affection 70+ | Lazy morning sex. Gentle. Whispered dialogue. |
+| **On Washing Machine** | Marina, Kaori | Laundry room + Corruption 50+ | Vibrations from machine + sex. Unique location scene. |
+| **Shower/Bath Sex** | All | Bathroom encounter + Corruption 40+ | Wet, slippery, steam. Different from bathtub (standing vs sitting). |
+| **Car Sex** | Kaori | Outside location unlocked | Backseat, steamed windows, after picking her up from work. |
+| **Remote Vibrator Public** | All (trained) | Buy vibrator ($250) + Obedience 70+ | MC controls vibrator while she's in public/at dinner/at work. She must stay composed. |
+
+---
+
+### POSITION SELECTION (In-Scene Mechanic)
+
+During every full H-scene, player gets **position change** prompts at key moments:
+
+```
+[Scene starts: foreplay/oral]
+        ↓
+[CHOOSE POSITION]  → Missionary / Doggy / Cowgirl / [Character-specific]
+        ↓
+[Mid-scene shift]
+        ↓
+[CHOOSE ESCALATION] → Same position (faster) / Switch position / Add element (dirty talk, slap, choke-lite)
+        ↓
+[Climax approaching]
+        ↓
+[CHOOSE FINISH]    → Where to cum (inside/face/mouth/body/pull out)
+```
+
+Each choice = different CG + different dialogue + different stat gain.
+Encourages replay to see ALL variants.
+
+---
+
+### FINISH/CUMSHOT SYSTEM
+
+| Finish | CG Description | Stat Effect | Special |
+|--------|---------------|-------------|---------|
+| **Creampie** | Internal shot, dripping out of her | Addiction +5 | Pregnancy scare chance (after 3x) |
+| **Facial** | Face covered, eyes closed or open | Corruption +5, Obedience +3 | Variants: surprised, willing, ahegao |
+| **Mouth (Swallow)** | Shows cum in mouth → swallows → opens to prove | Obedience +5 | Trained behavior at high obedience |
+| **Mouth (Show)** | Holds cum, shows MC, waits for permission to swallow | Obedience +7 | Requires Obedience 70+ |
+| **Chest/Tits** | Pearl necklace / between breasts | Neutral, Corruption +2 | Best with Marina (large target) |
+| **Stomach** | Across her belly | Neutral | Marking territory visual |
+| **Ass** | On her ass/lower back | Corruption +3 | Usually from doggy/prone bone |
+| **Inside (Anal)** | Anal creampie | Corruption +5, Obedience +5 | Most degrading for reluctant chars |
+| **Denial (Pull Out)** | MC pulls out at last second, doesn't cum | HER Desire +10 | Frustrates her, builds desperation |
+| **On Her Hands** | She catches it / jerks MC to finish | Neutral | "Safe" option early corruption |
+| **Multiple (Bukkake)** | Harem scene — all cum on one target | Corruption +10 | Only in group/harem scenes |
+
+---
+
+### OUTFIT / DRESS CODE DETAIL
+
+When Training: Dress Code is active, player can assign daily outfits:
+
+| Outfit | Visual | Where to Get | Effect |
+|--------|--------|-------------|--------|
+| **Normal Clothes** | Default | — | No bonus |
+| **Lingerie Only** | Bra + panties, see-through variants | Buy ($100-300) | Desire +3/day passive |
+| **Naked Apron** | Apron, nothing else | Already in house | Corruption +2/day, kitchen scenes |
+| **Maid Set** | Full maid uniform (short skirt variant) | Buy ($200) | Obedience +2/day, service scenes |
+| **Bunny Girl** | Leotard, ears, tail plug (optional) | Buy ($250) | Corruption +3/day, humiliation |
+| **School Uniform** | Sailor fuku or blazer | Yuki's closet / Buy ($100) | Roleplay scenes unlock |
+| **Office Uniform** | Kaori's work clothes (at home) | Already has | Kaori-specific: "wear it for me" |
+| **Bikini** | String bikini (barely covers) | Buy ($80) | Garden/pool scenes, public risk |
+| **Naked + Collar** | Nothing but collar and leash | Buy collar ($50) + Obedience 90 | Full ownership display. Others see. |
+| **MC's Shirt Only** | Just MC's oversized shirt, nothing under | Free | Intimate, casual dominance |
+| **Nothing** | Fully nude at all times in house | Obedience 80+ | Ultimate dress code. She just exists naked. |
+
+Each outfit changes:
+- Her sprite/appearance in-game
+- Available interaction options
+- Passive stat gains per day
+- Other characters' reactions (if they see)
+
+---
+
+### GALLERY / REPLAY SYSTEM (Detailed)
+
+**Gallery Structure:**
+```
+GALLERY MENU
+├── Marina (X/40 scenes unlocked)
+│   ├── Voyeur (5 scenes)
+│   ├── Foreplay/Oral (8 scenes)
+│   ├── Sex Scenes (12 scenes)
+│   ├── Advanced/Extreme (8 scenes)
+│   ├── Signature Scenes (4 scenes)
+│   └── NTR Scenes (3 scenes) [if enabled]
+├── Kaori (X/38 scenes)
+│   ├── ... (same structure)
+├── Yuki (X/42 scenes)
+│   ├── ... (same structure)
+├── Harem (X/15 scenes)
+│   ├── Threesome combinations
+│   ├── Full group
+│   └── Special events
+└── TOTAL: ~135 H-scenes + variants
+```
+
+**In-Game Repeats:**
+- After unlocking a scene, visiting the character's room shows new option: "Repeat [scene name]"
+- Repeatable scenes have shortened intro (skip buildup, get to action)
+- Can choose DIFFERENT positions/finishes on repeat (see all CG variants)
+- Reduced stat gain on repeat (can't farm), but Desire still builds
+
+**Gallery Rewards:**
+- 25% complete: Unlock "Fast Mode" (skip all non-H dialogue)
+- 50% complete: Unlock outfit color variants
+- 75% complete: Unlock "Director Mode" (choose any character + any outfit + any position = custom scene)
+- 100% complete: Unlock secret ending + bonus harem orgy scene
+
+---
+
+*H-Scene Expansion Added: v3.3*  
+*Total estimated H-content: ~135 base scenes + position/finish variants = 300+ unique CGs needed*  
+*Status: Concept Complete*
