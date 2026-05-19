@@ -1,0 +1,35 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scripts/script.rpy", line 71, in script
+    call screen sandbox_menu
+renpy.display.screen.ScreenNotFound: Screen 'sandbox_menu' is not known. Did you mean: 'sandbox_map'?
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/scripts/script.rpy", line 71, in script
+    call screen sandbox_menu
+  File "renpy/ast.py", line 2241, in execute
+    self.call("execute")
+    ~~~~~~~~~^^^^^^^^^^^
+  File "renpy/ast.py", line 2195, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/statements.py", line 381, in call
+    return method(parsed, *args, **kwargs)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/common/000statements.rpy", line 695, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/statementexports.py", line 334, in call_screen
+    renpy.exports.show_screen(_screen_name, *args, _transient=True, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/screen.py", line 1355, in show_screen
+    raise ScreenNotFound(name[0])
+renpy.display.screen.ScreenNotFound: Screen 'sandbox_menu' is not known. Did you mean: 'sandbox_map'?
+
+Windows-11-10.0.26200-SP0 AMD64
+Ren'Py 8.5.2.26010301
+House of Influence 0.1.0
+Tue May 19 19:26:22 2026
