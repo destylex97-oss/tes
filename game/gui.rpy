@@ -43,8 +43,8 @@ define gui.dialogue_width = 1300
 define gui.dialogue_text_xalign = 0.0
 
 # --- CHARACTER NAME ---
-define gui.name_xpos = 300
-define gui.name_ypos = -40
+define gui.name_xpos = 0
+define gui.name_ypos = -80
 define gui.name_xalign = 0.0
 define gui.namebox_width = 250
 define gui.namebox_height = 40

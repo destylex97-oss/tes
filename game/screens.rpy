@@ -39,7 +39,6 @@ style mmenu_btn_text:
     xalign 0.5
     yalign 0.5
 
-
 # --- SAY / DIALOGUE ---
 screen say(who, what):
     style_prefix "say"
@@ -68,12 +67,6 @@ style say_namebox is default:
     xsize gui.namebox_width
     ysize gui.namebox_height
     padding (15, 5, 15, 5)
-    xsize gui.namebox_width
-    ysize gui.namebox_height
-    xpos gui.name_xpos
-    ypos gui.name_ypos
-    padding (15, 5, 15, 5)
-
 
 # --- QUICK MENU ---
 screen quick_menu():
@@ -94,7 +87,6 @@ style qm_btn_text:
     color "#6A6A7A"
     hover_color "#D4A845"
     size 15
-
 
 # --- CHOICE ---
 screen choice(items):
@@ -118,7 +110,6 @@ style ch_btn_text:
     size 20
     xalign 0.5
     yalign 0.5
-
 
 # --- SAVE / LOAD ---
 screen save():
@@ -183,7 +174,6 @@ style pg_tab_text:
     xalign 0.5
     yalign 0.5
 
-
 # --- PREFERENCES ---
 screen preferences():
     tag menu
@@ -237,7 +227,6 @@ screen preferences():
                     textbutton "Windowed" action Preference("display", "any window") style "pg_tab"
                     textbutton "Fullscreen" action Preference("display", "fullscreen") style "pg_tab"
 
-
 # --- PHONE ---
 screen phone_screen():
     zorder 150
@@ -283,7 +272,6 @@ screen _phone_icon(label, icon, act):
         xsize 80
         imagebutton idle icon hover icon action act xalign 0.5
         text label size 11 color "#8A8A8A" xalign 0.5
-
 
 # --- STATS ---
 screen stats_screen():
@@ -339,7 +327,6 @@ screen _bar(label, val, col):
         bar value val range 100 xsize 100 ysize 10 left_bar Solid(col) right_bar Solid("#2A2A3E")
         text "[val]" size 12 color "#E8E6E3" yalign 0.5
 
-
 # --- SANDBOX MAP ---
 screen sandbox_map():
     zorder 120
@@ -391,7 +378,6 @@ screen _room(label, rid, ok):
             imagebutton idle "gui/map/room_locked.png" action NullAction()
         text label size 12 color "#E8E6E3" xalign 0.5
 
-
 # --- GALLERY (placeholder) ---
 screen gallery():
     tag menu
@@ -410,7 +396,6 @@ screen gallery():
                 textbutton "Close" action Return() text_color "#8A8A8A" text_hover_color "#D4A845"
             null height 30
             text "Coming soon..." size 18 color "#8A8A8A" xalign 0.5
-
 
 # --- HISTORY ---
 screen history():
@@ -443,7 +428,6 @@ screen history():
                             text h.what size 16 color "#E8E6E3"
                         null height 8
 
-
 # --- CONFIRM ---
 screen confirm(message, yes_action, no_action):
     zorder 300
@@ -464,7 +448,6 @@ screen confirm(message, yes_action, no_action):
                 spacing 30
                 textbutton "Yes" action yes_action style "hud_nav_btn"
                 textbutton "No" action no_action style "hud_nav_btn"
-
 
 # --- PLACEHOLDER PHONE SCREENS ---
 screen messages_screen():
