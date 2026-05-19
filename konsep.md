@@ -584,3 +584,167 @@ FIRST FLOOR:
 *Document Version: 3.0 (Final Concept — No Supernatural, Realistic Bodies)*  
 *Last Updated: May 2026*  
 *Status: Concept Phase — Ready for Development*
+
+---
+
+## APPENDIX: v3.1 FIXES (Applied)
+
+### FIX 1: Faster H-Content Pacing
+
+**OLD:** First H-scene Week 5-6  
+**NEW:** 
+
+| Week | Content Available |
+|------|-----------------|
+| Week 1 | Full nudity voyeur (bathing/changing), accidental groping |
+| Week 2 | First handjob OR sleep grope OR drunk fondling (Yuki or Marina) |
+| Week 3 | First oral scene available |
+| Week 4 | First full sex scene available |
+| Week 5+ | Advanced/hardcore scenes |
+
+Rule: Player should NEVER go more than 3 in-game days without some form of sexual content (minimum: ecchi CG, voyeur, or groping).
+
+---
+
+### FIX 2: Skill System — Auto-Progression (No Grind)
+
+**OLD:** "Complete 5 spy actions to unlock Level 2"  
+**NEW:** MC levels up automatically based on story/day progression:
+
+| Level | Name | Unlocks At | Justification |
+|-------|------|-----------|---------------|
+| 1 | **Observer** | Day 1 | MC arrives, starts noticing things |
+| 2 | **Opportunist** | Day 5 (end of Week 1) | MC has learned routines, knows when people are vulnerable |
+| 3 | **Manipulator** | Day 12 (Week 2) | MC has found first secret, starts creating situations |
+| 4 | **Controller** | Day 21 (Week 3) OR first successful blackmail | MC has leverage, starts issuing commands |
+| 5 | **Master** | Day 35+ (Week 5) OR 2+ characters at Obedience 50+ | MC runs the house |
+
+No grinding. No arbitrary counters. Just play the game → MC naturally gets better.
+
+---
+
+### FIX 3: Stat System Simplified (7 → 5)
+
+**OLD:** Affection, Corruption, Lust, Obedience, Resistance, Suspicion, Addiction (7 stats)
+
+**NEW (5 stats):**
+
+| Stat | What It Means | Range | Notes |
+|------|--------------|-------|-------|
+| **Affection** | How much she likes/trusts MC | 0-100 | High = willing scenes, she initiates |
+| **Corruption** | How far she's fallen (replaces old Corruption + Resistance) | 0-100 | 0 = pure refusal. 50 = reluctant but yielding. 80+ = broken/addicted. Represents the full pipeline from "No" to "Use me." |
+| **Obedience** | Will she follow orders? | 0-100 | Unlocks training, commands, specific demands |
+| **Desire** | Current horniness + dependency (replaces Lust + Addiction) | 0-100 | Partially temporary (decays), partially permanent (after first H-scene, baseline rises). High = she NEEDS MC. |
+| **Suspicion** | Does she suspect manipulation? | 0-100 | >80 without blackmail = danger. With blackmail = "unwilling obedient" scenes unlock. |
+
+**Why this works better:**
+- Player only tracks 5 numbers, not 7
+- Each stat has clear, distinct meaning
+- No confusion between "Corruption" and "Resistance" (they were always inverse of each other)
+- "Desire" covers both temporary horniness AND long-term addiction (base rises permanently after sex)
+
+---
+
+### FIX 4: Yuki Has a Cost (Not Free)
+
+**OLD:** Yuki is basically willing from Day 1, easiest route, no challenge.
+
+**NEW:** Yuki is the FASTEST to sex — but has the **highest long-term cost:**
+
+**The Yandere Tax:**
+- Yuki is willing early, BUT every scene with her increases her **Obsession** (hidden meter)
+- Low Obsession (0-30): Sweet, eager, best girl energy
+- Medium Obsession (31-60): Gets clingy, starts "checking up on MC," comments on other girls
+- High Obsession (61-80): Actively sabotages other routes (interrupts events, tells secrets, threatens Marina/Kaori)
+- Critical Obsession (81-100): Full yandere — drugs other women's food, installs cameras, threatens to expose MC unless he commits to her exclusively
+
+**Managing Yuki:**
+- Give her attention regularly (keeps her below critical)
+- Eventually choose: Ally with her (she helps control others) OR dominate her (break her obsession into obedience)
+- If ignored while high obsession: she becomes an ANTAGONIST in other routes
+- If you want pure harem: must bring her obsession down AND corruption up simultaneously (she accepts sharing only if she's corrupted enough to enjoy it)
+
+**Result:** Yuki is "easy to start" but "hard to manage" — the opposite of Marina (hard to start, easy to manage once broken).
+
+---
+
+### FIX 5: Blackmail — Actively Discovered Only
+
+**OLD:** Convenient plot devices (security cameras that happen to exist, etc.)
+
+**NEW:** ALL blackmail material requires ACTIVE player effort to obtain:
+
+**How to discover secrets:**
+
+| Method | Requirement | What You Get |
+|--------|-------------|-------------|
+| **Spy on phone** | Buy Phone Clone App ($200) + catch her phone unlocked | Texts, photos, browser history |
+| **Install camera** | Buy Hidden Camera ($300) + install during free time slot | Footage of private moments |
+| **Search room** | Buy Lock Pick ($150) + attempt during time she's away (risk of being caught) | Diaries, hidden items, evidence |
+| **Overhear** | Be in right place at right time (triggered by specific schedule knowledge) | Conversations, confessions |
+| **Drunk confession** | Give alcohol + right questions at right time | She admits things she regrets next morning |
+| **Catch in act** | MC actively stalks/follows at correct time (player must figure out schedule) | Direct witnessing |
+
+**Tier 1 secrets** — discoverable from Week 2 (low effort: search room, overhear)  
+**Tier 2 secrets** — discoverable from Week 3 (medium effort: phone clone, drunk confession)  
+**Tier 3 secrets** — discoverable from Week 4+ (high effort: hidden camera catches specific event, OR combine multiple pieces of evidence)
+
+**Key change:** No "convenient" evidence lying around. Player earns every piece of leverage.
+
+**Marina Tier 3 revised:** MC installs camera in living room → catches Marina letting the delivery man grope her in real-time → MC now has footage HE recorded, not some magic pre-existing camera.
+
+---
+
+### FIX 6: Gallery + Repeatable Encounters
+
+**System:** Once an H-scene is unlocked through story progression, it becomes permanently available in two ways:
+
+**A) In-Game Repeats:**
+- After first H-scene with a character, new interaction options appear in relevant rooms
+- Example: After first sex with Marina in her bedroom → "Visit Marina at night" becomes a permanent option (costs 1 time slot)
+- Repeatable scenes have shorter dialogue (skip the buildup) but same CG/mini-game
+- Some repeatable scenes unlock NEW variations at higher Corruption/Obedience (new positions, new dialogue)
+
+**B) Gallery (Menu Screen):**
+- Separate "Gallery" or "Memories" section accessible from main menu
+- Shows ALL unlocked CGs organized by character
+- Can replay full scene (with text) or just view CG
+- Locked scenes show silhouette (incentive to unlock)
+- Gallery completion % shown per character
+
+**Replay vs. Fresh:**
+- Repeatable encounters give REDUCED stat gains (can't farm the same scene)
+- But still give small Desire/Addiction boost (rewarding repeat visits)
+- Encourage pursuing NEW content while allowing fap-replay of old favorites
+
+---
+
+### REVISED PROGRESSION (with fixes applied):
+
+| Week | MC Level | Content Available | H-Content |
+|------|----------|------------------|-----------|
+| 1 (Day 1-7) | Observer | Learn routines, first "accidents," basic voyeur | Full nudity voyeur, accidental groping CGs |
+| 2 (Day 8-14) | Opportunist | Exploit vulnerable moments, first items | **First H-scene** (handjob/sleep grope/drunk fondle) |
+| 3 (Day 15-21) | Manipulator | Create situations, Tier 1-2 blackmail | First oral, more H-scene variety |
+| 4 (Day 22-28) | Controller | Blackmail active, training starts | First full sex, commands |
+| 5+ (Day 29+) | Master | Full control, harem, endgame | All scenes, advanced acts, group |
+
+---
+
+### REVISED STAT INTERACTIONS (5-stat system):
+
+| Combo | What Happens |
+|-------|-------------|
+| High Affection + High Corruption | "I love you AND I'm your slut" — devoted pervert route |
+| Low Affection + High Corruption | "I hate this but I can't stop" — reluctant addict |
+| High Obedience + Low Affection | "I do what you say because I have no choice" — blackmailed slave |
+| High Obedience + High Affection | "I obey because I WANT to please you" — willing sub |
+| High Desire + Low Corruption | "I want it but I won't admit it" — denial/teasing territory |
+| High Desire + High Corruption | "I need it NOW, I don't care about anything else" — broken addict |
+| Suspicion > 80 + No Blackmail | Route fails — she confronts MC, relationship destroyed |
+| Suspicion > 80 + Has Blackmail | "I know what you're doing... but I can't stop you" — darkest scenes unlock |
+
+---
+
+*Fixes Applied: v3.1*  
+*Status: Ready for Development*
