@@ -24,3 +24,14 @@
 /dialogue.tab
 /dialogue.txt
 /strings.json
+
+# Ren'Py compiled files
+*.rpyc
+*.rpyb
+**/__pycache__/
+**/cache/
+**/saves/
+**/tmp/
+**/log.txt
+**/traceback.txt
+**/errors.txt
