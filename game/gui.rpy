@@ -35,20 +35,20 @@ define gui.name_text_font = gui.preference("font", "DejaVuSans.ttf")
 define gui.interface_text_font = gui.preference("font", "DejaVuSans.ttf")
 
 # --- DIALOGUE BOX ---
-define gui.textbox_height = 200
+define gui.textbox_height = 220
 define gui.textbox_yalign = 1.0
-define gui.dialogue_xpos = 50
-define gui.dialogue_ypos = 50
-define gui.dialogue_width = 1700
+define gui.dialogue_xpos = 300
+define gui.dialogue_ypos = 75
+define gui.dialogue_width = 1300
 define gui.dialogue_text_xalign = 0.0
 
 # --- CHARACTER NAME ---
-define gui.name_xpos = 30
-define gui.name_ypos = 5
+define gui.name_xpos = 300
+define gui.name_ypos = -40
 define gui.name_xalign = 0.0
 define gui.namebox_width = 250
 define gui.namebox_height = 40
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(10, 5, 10, 5)
 
 # --- CHOICE BUTTONS ---
 define gui.choice_button_width = 700

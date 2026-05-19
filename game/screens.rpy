@@ -55,13 +55,19 @@ screen say(who, what):
 
 style say_window is default:
     background "gui/dialogue/dialogue_box.png"
-    xfill True
+    xsize 1820
     ysize gui.textbox_height
+    xalign 0.5
     yalign 1.0
-    padding (60, 50, 60, 30)
+    padding (60, 60, 60, 30)
 
 style say_namebox is default:
     background "gui/dialogue/name_plate.png"
+    xpos gui.name_xpos
+    ypos gui.name_ypos
+    xsize gui.namebox_width
+    ysize gui.namebox_height
+    padding (15, 5, 15, 5)
     xsize gui.namebox_width
     ysize gui.namebox_height
     xpos gui.name_xpos
